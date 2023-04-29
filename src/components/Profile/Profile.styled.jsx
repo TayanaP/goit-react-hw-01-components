@@ -52,9 +52,6 @@ export const StateItem = styled.li`
   align-items: center;
   justify-content: center;
   width: 33%;
-  &:not(:last-child) {
- 
-  }
 `;
 
 export const Label = styled.span`
