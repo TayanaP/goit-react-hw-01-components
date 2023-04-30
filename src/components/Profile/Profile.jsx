@@ -12,7 +12,7 @@ import {
   Quantity,
 } from './Profile.styled';
 
-export default function Profile({
+export function Profile({
   username,
   tag,
   location,

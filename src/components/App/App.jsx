@@ -1,8 +1,13 @@
-import Profile from 'components/Profile/Profile';
-import Statistics from 'components/Statistics/Statistics';
+import {Profile} from 'components/Profile/Profile';
+import {Statistics} from 'components/Statistics/Statistics';
+import {FriendList} from 'components/FriendList/FriendList'
+import {TransactionHistory} from 'components/TransactionHistory/TransactionHistory'
 import user from '../../data/user.json';
 import data from '../../data/data.json';
+import friends from '../../data/friends.json'
+import transactions from '../../data/transactions.json'
 import { Section } from '../App/App.styled';
+
 
 
 export const App = () => {
@@ -20,21 +25,18 @@ export const App = () => {
   />
    </Section> 
 
+   <Section>
    <Statistics title="Upload stats" stats={data} />
    <Statistics stats={data} />
-  </>
+   </Section> 
 
-    // <div
-    //   style={{
-    //     height: '100vh',
-    //     display: 'flex',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     fontSize: 40,
-    //     color: '#010101'
-    //   }}
-    // >
-    //   React homework template
-    // </div>
-  );
+   <Section>
+   <FriendList friends={friends} />;
+   </Section>
+
+   <Section>
+   <TransactionHistory items={transactions} />;
+   </Section>
+  </>
+  )
 };

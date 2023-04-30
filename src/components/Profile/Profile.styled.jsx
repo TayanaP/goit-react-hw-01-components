@@ -5,7 +5,7 @@ export const ProfileBox = styled.div`
   max-width: 250px;
   padding: 20px 0 0;
   text-align: center;
-  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
   background-color: #fff;
 `;
 
